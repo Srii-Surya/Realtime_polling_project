@@ -1,0 +1,49 @@
+{
+  "info": {
+    "name": "Realtime Polling API"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "url": "{{base}}/api/accounts/register/"
+      }
+    },
+    {
+      "name": "Obtain Token",
+      "request": {
+        "method": "POST",
+        "url": "{{base}}/api/accounts/token/"
+      }
+    },
+    {
+      "name": "Create Session",
+      "request": {
+        "method": "POST",
+        "url": "{{base}}/api/polls/sessions/"
+      }
+    },
+    {
+      "name": "Join Session",
+      "request": {
+        "method": "GET",
+        "url": "{{base}}/api/polls/join/:join_code/"
+      }
+    },
+    {
+      "name": "Submit Votes",
+      "request": {
+        "method": "POST",
+        "url": "{{base}}/api/polls/vote/:join_code/"
+      }
+    },
+    {
+      "name": "SSE Results",
+      "request": {
+        "method": "GET",
+        "url": "{{base}}/api/polls/sse/:join_code/"
+      }
+    }
+  ]
+}
